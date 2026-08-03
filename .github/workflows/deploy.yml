@@ -1,0 +1,51 @@
+name: Deploy React App to AWS
+
+on:
+  push:
+    branches:
+      - main # Automatically runs whenever code is pushed to main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Pull down repository code
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      # 2. Set up Node.js environment
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "npm"
+
+      # 3. Install NPM dependencies
+      - name: Install Dependencies
+        run: npm ci
+
+      # 4. Build static production assets
+      - name: Build React App
+        run: npm run build
+
+      # 5. Authenticate with AWS
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1 # Change if your S3 bucket is in another region
+
+      # 6. Upload build output to S3
+      # (Note: Use ./dist for Vite, or ./build for Create React App)
+      - name: Deploy to S3
+        run: |
+          aws s3 sync ./dist s3://${{ secrets.AWS_S3_BUCKET }} --delete
+
+      # 7. Invalidate CloudFront cache so changes display instantly
+      - name: Invalidate CloudFront Cache
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} \
+            --paths "/*"
