@@ -1,0 +1,197 @@
+{
+  "name": "Harsh Shah",
+  "quote": "There are only two hard things in Computer Science: cache invalidation and naming things",
+  "introduction": "Senior Software Engineer with 8 years of experience designing high-throughput microservices and distributed systems capable of processing 14M+ daily transactions. Expert in modernizing complex architectures through AI-assisted development",
+  "contact": {
+    "email": "harsshah1994@gmail.com",
+    "phone": "+1-716-939-8261",
+    "linkedin": "https://www.linkedin.com/in/harsshah/",
+    "github": "https://github.com/HarshShah24"
+  },
+  "education": [
+    {
+      "degree": "Master of Science in Computer Science",
+      "school": "University at Buffalo",
+      "year": "Jan 2020 - May 2021"
+    },
+    {
+      "degree": "Bachelor of Engineering in Information Technology",
+      "school": "University of Mumbai",
+      "year": "2012 - 2016"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "AWS Certified Cloud Practitioner",
+      "link": "https://www.credly.com/badges/b2b33454-2194-4fa0-8f38-8865363b08f4"
+    }
+  ],
+  "technicalSkills": [
+    {
+      "category": "Programming Languages",
+      "skills": ["Java (8/11/17)", "Python", "Sql"]
+    },
+    {
+      "category": "Frameworks",
+      "skills": [
+        "Spring Boot",
+        "REST APIs",
+        "Microservices",
+        "Sequencer Architecture",
+        "Apache Kafka",
+        "Hazlecast",
+        "Protobuf",
+        "Junit",
+        "Gradle"
+      ]
+    },
+    {
+      "category": "AI & Productivity Tools",
+      "skills": ["Github Copilot", "Opencode", "Claude Code"]
+    },
+    {
+      "category": "Databases",
+      "skills": ["PostgreSQL", "Sybase", "MongoDB"]
+    }
+  ],
+  "experience": [
+    {
+      "Company": "Goldman Sachs",
+      "role": "Senior Software Engineer",
+      "timeline": "August 2021 - Present",
+      "location": "New York City, NY",
+      "duration": "5 years"
+    },
+    {
+      "Company": "Amdocs",
+      "role": "Software Development Engineer",
+      "timeline": "September 2016 - January 2020",
+      "location": "Pune, India",
+      "duration": "3 years 4 months"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Event-Driven Data Platform",
+      "role": "Senior Software Engineer",
+      "company": "Goldman Sachs",
+      "contributions": [
+        {
+          "description": "Architected the migration of high-volume data streams from a monolithic legacy system to a modern, event-based microservices architecture, reducing end-to-end processing latency by 2 hours during peak loads"
+        },
+        {
+          "description": "Optimized message distribution patterns by implementing a multi-partition Kafka strategy and custom partition keys, successfully eliminating consumer lag and achieving a peak throughput of 200K+ messages/hour"
+        },
+        {
+          "description": "Built robust system resilience by implementing distributed back off and retry patterns for external API integrations, significantly reducing processing failures"
+        },
+        {
+          "description": "Automated Regression: Developed a high-fidelity regression testing suite that capturesproduction Kafka traffic and replays it in QA."
+        },
+        {
+          "description": "Integrated AI-based log analysis tools to ingest and compare logs from previous releases against current runs, utilizing LLMs to detect anomalous behavioral shifts and ensure no fundamental breaking changes in complex business flows."
+        }
+      ],
+      "technologies": [
+        {
+          "programmingLanguages": ["Java 11", "React"],
+          "frameworks": ["Spring Boot"],
+          "databases": ["PostgreSQL", "Sybase", "mongodb"],
+          "cache": ["Hazlecast"],
+          "messageQueue": ["Kafka"]
+        }
+      ]
+    },
+    {
+      "title": "Securities Trade Confirms & Digital Delivery Platform",
+      "role": "Senior Software Engineer",
+      "company": "Goldman Sachs",
+      "contributions": [
+        {
+          "description": "Designed and implemented a high-availability microservices architecture using Spring Bootand Java 17, exposing secure RESTful APIs to facilitate seamless cross-platform data exchange."
+        },
+        {
+          "description": "Standardized API documentation and contract-first development using Swagger/OpenAPI, improving developer experience and reducing integration time for downstream consumer teams"
+        },
+        {
+          "description": "Built robust system resilience by implementing distributed back off and retry patterns for external API integrations, significantly reducing processing failures"
+        },
+        {
+          "description": "Utilized JUnit and Mockito for robust unit testing and WireMock for mocking HTTP-based services, ensuring high code coverage and system reliability during the migration."
+        }
+      ],
+      "technologies": [
+        {
+          "programmingLanguages": ["Java 17"],
+          "frameworks": ["Spring Boot", "Kubernetes", "REST", "Microservices"],
+          "messageQueue": ["Kafka"]
+        }
+      ]
+    },
+    {
+      "title": "Modernizing Mainframe Systems",
+      "role": "Senior Software Engineer",
+      "company": "Goldman Sachs",
+      "contributions": [
+        {
+          "description": "Developed a low-latency data bridge using Socket Programming to interface between legacy data stores and Apache Kafka, enabling real-time stream processing and reducing data ingestion lag"
+        },
+        {
+          "description": "Collaborated to migrate core processing logic from IBM Mainframe systems to Sequencer Based Architecture, resulting in a modern platform capable of reliably handling 13-14 million stock exchange transactions daily across global markets"
+        },
+        {
+          "description": "Engineered the complete uplift of the legacy configuration tool, resulting in improved business workflow efficiency, built-in change auditing, and a better user experience for new user onboarding"
+        },
+        {
+          "description": "Engineered a scalable configuration management service, replacing a legacy internal tool with a modern UI/API framework that automated onboarding workflows and implemented distributed audit logging for system-wide transparency"
+        }
+      ],
+      "technologies": [
+        {
+          "programmingLanguages": ["Java 11", "Python"],
+          "frameworks": ["Socket Programming"],
+          "databases": ["mongodb"],
+          "messageQueue": ["Kafka"]
+        }
+      ]
+    },
+    {
+      "title": "Distributed Transaction & Workflow Orchestration",
+      "role": "Senior Software Engineer",
+      "company": "Goldman Sachs",
+      "contributions": [
+        {
+          "description": "Architected an end-to-end workflow orchestration engine that eliminated manual intervention in Payment Processing Platform, reducing operational risk and reclaiming 20+ engineering/ops hours per week"
+        },
+        {
+          "description": "Engineered dynamic schema updates within the transaction pipeline to support evolving regulatory standards, ensuring 100% data integrity and backward compatibility across highvolume data formats"
+        }
+      ],
+      "technologies": [
+        {
+          "programmingLanguages": ["Java 8"],
+          "frameworks": ["Spring", "REST"],
+          "databases": ["Sybase"],
+          "messageQueue": ["Kafka"]
+        }
+      ]
+    },
+    {
+      "title": "Order Management System - Digital Transformation",
+      "role": "Software Development Engineer",
+      "company": "Amdocs",
+      "contributions": [
+        {
+          "description": "Acted as SME for the design and implementation of production-grade RESTful web services in Java, enabling reliable data consumption for mobile and web platforms."
+        }
+      ],
+      "technologies": [
+        {
+          "programmingLanguages": ["Java 7", "Python"],
+          "frameworks": ["REST", "mircorservices"],
+          "databases": ["oracle"]
+        }
+      ]
+    }
+  ]
+}
