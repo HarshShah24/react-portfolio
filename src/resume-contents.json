@@ -55,6 +55,12 @@
     }
   ],
   "experience": [
+     {
+      "Company": "Bloomberg L.P.",
+      "role": "Senior Software Engineer",
+      "timeline": "August 2026 - Present",
+      "location": "New York City, NY"
+    },
     {
       "Company": "Goldman Sachs",
       "role": "Senior Software Engineer",
